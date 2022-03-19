@@ -11,10 +11,10 @@ import static events.QueryParamHandler.ensureLong;
 import static events.QueryParamHandler.ensureString;
 
 public class RegisterUserEvent implements Event {
-    long id;
-    String name;
-    String login;
-    String currencyType;
+    private final long id;
+    private final String name;
+    private final String login;
+    private final String currencyType;
 
     public RegisterUserEvent(long id, String name, String login, String currencyType) {
         this.id = id;

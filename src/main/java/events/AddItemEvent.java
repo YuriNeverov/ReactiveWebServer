@@ -11,8 +11,8 @@ import static events.QueryParamHandler.ensureString;
 import static events.QueryParamHandler.ensureDouble;
 
 public class AddItemEvent implements Event {
-    String name;
-    double price;
+    private final String name;
+    private final double price;
 
     public AddItemEvent(String name, double price) {
         this.name = name;

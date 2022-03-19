@@ -11,7 +11,7 @@ import java.util.Map;
 import static events.QueryParamHandler.ensureLong;
 
 public class ItemsListEvent implements Event {
-    long id;
+    private final long id;
 
     public ItemsListEvent(long id) {
         this.id = id;

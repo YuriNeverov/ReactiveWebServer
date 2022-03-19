@@ -30,7 +30,7 @@ public class ReactiveMongoDriver {
                 .flatMap(user ->
                     database.getCollection("items").find()
                             .toObservable()
-                            .map(doc -> new Item(doc, user.currencyType)));
+                            .map(doc -> new Item(doc, user.getCurrencyType())));
     }
 
     public static MongoClient createMongoClient() {

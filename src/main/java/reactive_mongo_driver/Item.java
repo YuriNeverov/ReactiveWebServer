@@ -6,9 +6,9 @@ import utils.CurrencyUtils;
 import java.util.Map;
 
 public class Item {
-    public final String name;
-    public final double price;
-    public final CurrencyUtils.Type currencyType;
+    private final String name;
+    private final double price;
+    private final CurrencyUtils.Type currencyType;
 
     public Item(Document doc, CurrencyUtils.Type currencyType) {
         this(

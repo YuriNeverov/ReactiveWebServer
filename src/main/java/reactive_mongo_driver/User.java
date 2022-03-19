@@ -6,10 +6,10 @@ import utils.CurrencyUtils;
 import java.util.Map;
 
 public class User {
-    public final long id;
-    public final String name;
-    public final String login;
-    public final CurrencyUtils.Type currencyType;
+    private final long id;
+    private final String name;
+    private final String login;
+    private final CurrencyUtils.Type currencyType;
 
 
     public User(Document doc) {
@@ -33,5 +33,9 @@ public class User {
     public Document toDocument() {
         return new Document(Map.of("id", id, "name", name,
                                 "login", login, "currency_type", currencyType));
+    }
+
+    public CurrencyUtils.Type getCurrencyType() {
+        return currencyType;
     }
 }
