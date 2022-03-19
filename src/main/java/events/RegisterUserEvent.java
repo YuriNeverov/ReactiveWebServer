@@ -37,6 +37,5 @@ public class RegisterUserEvent implements Event {
                        ensureString(params, "name").bind(name ->
                              ensureString(params, "currency_type").bind(currencyType ->
                                      Either.left(new RegisterUserEvent(id, name, login, currencyType))))));
-
     }
 }

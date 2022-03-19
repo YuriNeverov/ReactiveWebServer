@@ -30,4 +30,3 @@ public class AddItemEvent implements Event {
                 ensureDouble(params, "price").bind(price -> Either.left(new AddItemEvent(name, price))));
     }
 }
-

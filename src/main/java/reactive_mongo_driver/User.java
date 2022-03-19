@@ -11,7 +11,6 @@ public class User {
     private final String login;
     private final CurrencyUtils.Type currencyType;
 
-
     public User(Document doc) {
         this(doc.getLong("id"), doc.getString("name"),
              doc.getString("login"), doc.getString("currency_type"));
